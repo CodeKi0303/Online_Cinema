@@ -1,0 +1,210 @@
+/* 전체 개요 디자인 (사이트이동)*/
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../image/background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer{
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.7s;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+#home{
+    background-color: #fff;
+    color: #000;
+}
+
+.title{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+
+/* 버튼 디자인 */
+
+input[type="submit"]{
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    padding: 5px 20px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+    font-weight: bold;
+    padding-right: 32px;
+}
+
+label::before{
+    position: relative;
+    top: -5px;
+    content: "";
+    border: 2px solid #fff;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: -8px 20px;
+    margin-left: 0;
+    border-radius: 50%;
+}
+
+label::after{
+    position: relative;
+    top: -8px;
+    right: 49px;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0);
+    margin: -8px 21px;
+    margin-left: 0;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+input[type='radio']:checked + label::after{
+    background: rgba(255, 255, 255, 1);
+}
+
+input[type='checkbox']:checked + label::after{
+    background: rgba(255, 255, 255, 1);
+}
+
+
+/* 체크박스 세부조정 */
+.lastlabel::after{
+    position: relative;
+    top: -8px;
+    right: 93px;
+    
+}
+
+.male::after{
+    position: relative;
+    right: 73px;
+}
+
+.female::after{
+    position: relative;
+    right: 89px;
+}
+
+.romance::after{
+    position: relative;
+    right: 113px;
+}
+
+.family::after{
+    position: relative;
+    right: 86px;
+}
+
+.comedy::after{
+    position: relative;
+    right: 101px;
+
+}
+
+.sports::after{
+    position: relative;
+    right: 86px;
+}
+
+.horror::after{
+    position: relative;
+    right: 96px;
+}
+
+.west::after{
+    position: relative;
+    right: 68px;
+}
+
+
+
+/* 설문 문항 파트 레이아웃 */
+.age{
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.gen{
+    display: inline-block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.mov{
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+
