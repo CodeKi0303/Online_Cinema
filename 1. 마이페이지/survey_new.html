@@ -4,6 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/survey.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        // function radio_submit()
+        // {
+        //     //제출 정보 처리 관련 변수
+        //     var arr = [0, 0, 0];
+        //     var arr_sum;
+        //     var radio_age = document.getElementsByName("age");
+        //     var radio_gen = document.getElementsByName("gender");
+        //     var radio_mov = document.getElementsByName("mov");
+        //     var i;
+            
+        //     for(i =0; radio_age.length;i++)
+        //     {
+        //         if(radio_age[i].checked == true)
+        //         {
+        //             arr[0] = radio_age[i];
+        //             break;
+        //         }
+        //     }
+
+        //     for(i=0;radio_gen.length;i++)
+        //     {
+        //         if(radio_gen[i].checked == true)
+        //         {
+        //             arr[1] = radio_gen[i];
+        //             break;
+        //         }
+        //     }
+
+        //     for(i =0; radio_mov.length;i++)
+        //     {
+        //         if(radio_mov[i].checked == true)
+        //         {
+        //             arr[2] = radio_mov[i];
+        //             break;
+        //         }
+        //     }
+
+        //     arr_sum = arr[0].value + " " + arr[1].value + " " + arr[2].value;
+        //     alert(arr_sum);
+        //     console.log(arr_sum);
+            
+
+        // }
+        var arr_sum;
+    
+        $(document).ready(function(){
+            alert('First Ready');
+            $('#submit').click(function(){
+                var radio_age = $("input[name='age']:checked").val();
+                var radio_gen = $("input[name='gender']:checked").val();
+                var radio_mov = $("input[name='mov']:checked").val();
+                alert(radio_age);
+                alert(radio_gen);
+                alert(radio_mov);
+                arr_sum = radio_age + " " + radio_gen + " " + radio_mov;
+                alert(arr_sum);
+            });
+
+        });
+    </script>
     <title>Document</title>
 </head>
 <body>
@@ -30,39 +93,39 @@
     <form action="#" method="POST">
         <div class="age">
             <h2>1. CHOOSE YOUR GENERATION</h2>
-            <input type="radio" id="10" name="age">
+            <input type="radio" id="10" name="age" value="10">
             <label for="10" class="first">10</label>
-            <input type="radio" id="20" name="age">
+            <input type="radio" id="20" name="age" value="20">
             <label for="20">20</label>
-            <input type="radio" id="30" name="age">
+            <input type="radio" id="30" name="age" value="30">
             <label for="30">30</label>
-            <input type="radio" id="40" name="age">
+            <input type="radio" id="40" name="age" value="40">
             <label for="40">40</label>
-            <input type="radio" id="50" name="age">
+            <input type="radio" id="50" name="age" value="50">
             <label for="50" class="lastlabel">AFTER50</label>    
         </div>
 
         <div class="gen">
             <h2>2. CHOOSE YOUR GENDER</h2>
-            <input type="radio" id="male" name="gen">
+            <input type="radio" id="male" name="gender" value="male">
             <label for="male" class="male">MALE</label>
-            <input type="radio" id="female" name="gen">
+            <input type="radio" id="female" name="gender" value="female">
             <label for="female" class="female">FEMALE</label>
         </div>
     
         <div class="mov">
             <h2>3. CHOOSE GENRE YOU LIKE</h2>
-            <input type="checkbox" name="mov" id="romance">
+            <input type="radio" name="mov" id="romance" value="romance">
             <label for="romance" class="romance">ROMANCE</label>
-            <input type="checkbox" name="mov" id="family">
+            <input type="radio" name="mov" id="family" value="family">
             <label for="family" class="family">FAMILY</label>
-            <input type="checkbox" name="mov" id="comedy">
+            <input type="radio" name="mov" id="comedy" value="comedy">
             <label for="comedy" class="comedy">COMEDY</label>
-            <input type="checkbox" name="mov" id="sports">
+            <input type="radio" name="mov" id="sports" value="sports">
             <label for="sports" class="sports">SPORTS</label>
-            <input type="checkbox" name="mov" id="horror">
+            <input type="radio" name="mov" id="horror" value="horror">
             <label for="horror" class="horror">HORROR</label>
-            <input type="checkbox" name="mov" id="west">
+            <input type="radio" name="mov" id="west" value="west">
             <label for="west" class="west">WEST</label>
         </div>
 
@@ -70,6 +133,7 @@
         
     </form>
 
-    <footer>&copy; 2020 5th Group mjh</footer>
+    <!-- <footer>&copy; 2020 5th Group mjh</footer> -->
 </body>
+<footer>&copy; 2020 5th Group mjh</footer>
 </html>
