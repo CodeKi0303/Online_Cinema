@@ -10,19 +10,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 //로그인
-app.post('/login_id', function (request, response) {
+app.post('/login', function (request, response) {
     
     const jsonfile = fs.readFileSync('login_data.json', 'utf-8');
     const login_data = JSON.parse(jsonfile);
 
     var id_n = 0;
 
-    var id = request.body.id;
-    var pw = requset.body.pw;
     var find_v = 0;
 
-    while(login_data[id_n]){
-        if(login_data[id_n].id == id){
+    while(login_data[id_n]){        
+        if(login_data[id_n].id == request.body.id){
             find_v = 1;
             break;
         }else{
@@ -36,7 +34,7 @@ app.post('/login_id', function (request, response) {
         });
     }
 
-    if(login_data[id_n].pw == pw){
+    if(login_data[id_n].pw == request.body.pw){
         response.send({
             message: '로그인 성공!',
         });
@@ -53,11 +51,10 @@ app.post('/find_id', function (request, response) {
     const login_data = JSON.parse(jsonfile);
     var id_n = 0;
 
-    var email = request.body.email;
     var find_v = 0;
 
     while(login_data[id_n]){
-        if(login_data[id_n].email == email){
+        if(login_data[id_n].email == request.body.email){
             response.send({
                 message: 'id는 아래와 같습니다.',
                 id: login_data[id_n].id
@@ -81,13 +78,11 @@ app.post('/find_pw', function (request, response) {
     const login_data = JSON.parse(jsonfile);
     var id_n = 0;
 
-    var id = request.body.id;
-    var email = request.body.email;
     var find_v = 0;
 
     while(login_data[id_n]){
-        if(login_data[id_n].id == id){
-            if(login_data[id_n].email == email){
+        if(login_data[id_n].id == request.body.id){
+            if(login_data[id_n].email == request.body.email){
                 response.send({
                     message: 'pw는 아래와 같습니다.',
                     pw: login_data[id_n].pw
@@ -120,11 +115,6 @@ app.post('/sign_up', function (request, response) {
     const login_data = JSON.parse(jsonfile);
     var id_n = 0;
 
-    var id = request.body.id;
-    var pw = request.body.pw;
-    var pwcheck = request.body.pwcheck;
-    var email = request.body.email;
-    var nickname = request.body.nickname;
 
     while(1){
         if (login_data[id_n]) {
@@ -133,11 +123,11 @@ app.post('/sign_up', function (request, response) {
         } else {
             // 데이터를 추가합니다.
             var new_login_data = {
-                id: id,
-                pw: pw,
-                pwcheck: pwcheck,
-                email: email,
-                nickname: nickname
+                id: request.body.id,
+                pw: request.body.pw,
+                pwcheck: request.body.pwcheck,
+                email: request.body.email,
+                nickname: request.body.nickname
             }
             login_data.push(new_login_data);
             // 응답합니다.
