@@ -146,37 +146,46 @@ input[type='checkbox']:checked + label::after{
     right: 89px;
 }
 
-.romance::after{
+.ACTION::after{
+    position: relative;
+    right: 92px;
+}
+
+.DRAMA::after{
+    position: relative;
+    right: 90px;
+}
+
+.ROMANCE::after{
     position: relative;
     right: 113px;
+
 }
 
-.family::after{
-    position: relative;
-    right: 86px;
-}
-
-.comedy::after{
+.COMEDY::after{
     position: relative;
     right: 101px;
-
 }
 
-.sports::after{
+.FAMILY::after{
     position: relative;
-    right: 86px;
+    right: 87px;
 }
 
-.horror::after{
+.HORROR::after{
     position: relative;
-    right: 96px;
+    right: 97px;
 }
 
-.west::after{
+.THRILLIER::after{
     position: relative;
-    right: 68px;
+    right: 99px;
 }
 
+.ADVENTURE::after{
+    position: relative;
+    right: 120px;
+}
 
 
 /* 설문 문항 파트 레이아웃 */
@@ -199,7 +208,7 @@ input[type='checkbox']:checked + label::after{
 }
 
 .mov{
-    display: block;
+    display: inline-block;
     position: absolute;
     top: 70%;
     left: 50%;

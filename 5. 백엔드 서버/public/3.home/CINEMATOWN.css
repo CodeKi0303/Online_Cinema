@@ -16,6 +16,11 @@ li {
     color: white;
 }
 
+#header-menu{
+    float: right;
+    margin-right: 20px;
+}
+
 .slide_wrapper1 {
     position: relative;
     width: 1900px;

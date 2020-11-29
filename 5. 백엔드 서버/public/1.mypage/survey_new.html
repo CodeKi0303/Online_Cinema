@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/survey.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
@@ -53,15 +54,11 @@
         var arr_sum;
     
         $(document).ready(function(){
-            alert('First Ready');
             $('#submit').click(function(){
                 var radio_age = $("input[name='age']:checked").val();
                 var radio_gen = $("input[name='gender']:checked").val();
                 var radio_mov = $("input[name='mov']:checked").val();
-                alert(radio_age);
-                alert(radio_gen);
-                alert(radio_mov);
-                arr_sum = radio_age + " " + radio_gen + " " + radio_mov;
+                arr_sum = radio_age + " " + radio_gen + " " + radio_mov + "이 저장되었습니다.";
                 alert(arr_sum);
             });
 
@@ -74,10 +71,17 @@
     <header>
         <div class="main">
             <ul>
-                <li><a href="#" id="home">Home</a> </li>
-                <li><a href="#">Movie</a> </li>
-                <li><a href="#">Rates</a> </li>
-                <li><a href="#">My page</a> </li>
+                <li>
+                    <form action="/home", method="post">
+                        <button type="submit" id="home" class="btn">Home</a>
+                    </form> 
+                </li>
+                &emsp;&emsp;&emsp;&emsp;
+                <li>
+                    <form action="/mypage", method="post">
+                        <button type="submit" id="MYPAGE" class="btn">My page</a>
+                    </form> 
+                </li>
             </ul>
         </div>
     </header>
@@ -90,7 +94,7 @@
 
 
 
-    <form action="#" method="POST">
+    <form action="/survey" method="post">
         <div class="age">
             <h2>1. CHOOSE YOUR GENERATION</h2>
             <input type="radio" id="10" name="age" value="10">
@@ -115,18 +119,23 @@
     
         <div class="mov">
             <h2>3. CHOOSE GENRE YOU LIKE</h2>
-            <input type="radio" name="mov" id="romance" value="romance">
-            <label for="romance" class="romance">ROMANCE</label>
-            <input type="radio" name="mov" id="family" value="family">
-            <label for="family" class="family">FAMILY</label>
-            <input type="radio" name="mov" id="comedy" value="comedy">
-            <label for="comedy" class="comedy">COMEDY</label>
-            <input type="radio" name="mov" id="sports" value="sports">
-            <label for="sports" class="sports">SPORTS</label>
-            <input type="radio" name="mov" id="horror" value="horror">
-            <label for="horror" class="horror">HORROR</label>
-            <input type="radio" name="mov" id="west" value="west">
-            <label for="west" class="west">WEST</label>
+            <input type="radio" name="mov" id="ACTION" value="ACTION">
+            <label for="ACTION" class="ACTION">ACTION</label>
+            <input type="radio" name="mov" id="DRAMA" value="DRAMA">
+            <label for="DRAMA" class="DRAMA">DRAMA</label>
+            <input type="radio" name="mov" id="ROMANCE" value="ROMANCE">
+            <label for="ROMANCE" class="ROMANCE">ROMANCE</label>
+            <input type="radio" name="mov" id="COMEDY" value="COMEDY">
+            <label for="COMEDY" class="COMEDY">COMEDY</label>
+            <input type="radio" name="mov" id="FAMILY" value="FAMILY">
+            <label for="FAMILY" class="FAMILY">FAMILY</label>
+            <br>
+            <input type="radio" name="mov" id="HORROR" value="HORROR">
+            <label for="HORROR" class="HORROR">HORROR</label>
+            <input type="radio" name="mov" id="THRILLIER" value="THRILLIER">
+            <label for="THRILLIER" class="THRILLIER">THRILLIER</label>
+            <input type="radio" name="mov" id="ADVENTURE" value="ADVENTURE">
+            <label for="ADVENTURE" class="ADVENTURE">ADVENTURE</label>
         </div>
 
         <input type="submit" name="submit" id="submit" value="SUBMIT">
