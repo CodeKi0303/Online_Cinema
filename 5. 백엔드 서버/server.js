@@ -88,17 +88,17 @@ function template_CINEMATOWN(nick, mov){
                 <li>
                     <a href="https://www.youtube.com/watch?v=gg22TMYpkxk"><img src="./액션/1.jpg" alt="킹덤 오브 헤븐: 디렉터스 컷" width="300" height="400"></a>
                 </li>
-                <li><img src="./액션/2.jpg" alt="다만 악에서 구하소서 파이널컷" width="300" height="400"></li>
-                <li><img src="./액션/3.jpg" alt="엣지 오브 투모로우" width="300" height="400"></li>
-                <li><img src="./액션/4.jpg" alt="그린랜드" width="300" height="400"></li>
-                <li><img src="./액션/5.jpg" alt="국제수사" width="300" height="400"></li>
-                <li><img src="./액션/6.jpg" alt="검객" width="300" height="400"></li>
-                <li><img src="./액션/7.jpg" alt="뉴 뮤턴트" width="300" height="400"></li>
-                <li><img src="./액션/8.jpg" alt="에이바" width="300" height="400"></li>
-                <li><img src="./액션/9.jpg" alt="드라이브" width="300" height="400"></li>
+                <li><img src="./액션/2.jpg" onclick="javascript:page_move('다만 악에서 구하소서 파이널컷'); alt="다만 악에서 구하소서 파이널컷" width="300" height="400"></li>
+                <li><img src="./액션/3.jpg" onclick="javascript:page_move('엣지 오브 투모로우'); alt="엣지 오브 투모로우" width="300" height="400"></li>
+                <li><img src="./액션/4.jpg" onclick="javascript:page_move('그린랜드'); alt="그린랜드" width="300" height="400"></li>
+                <li><img src="./액션/5.jpg" onclick="javascript:page_move('국제수사'); alt="국제수사" width="300" height="400"></li>
+                <li><img src="./액션/6.jpg" onclick="javascript:page_move('검객'); alt="검객" width="300" height="400"></li>
+                <li><img src="./액션/7.jpg" onclick="javascript:page_move('뉴 뮤턴트'); alt="뉴 뮤턴트" width="300" height="400"></li>
+                <li><img src="./액션/8.jpg" onclick="javascript:page_move('에이바'); alt="에이바" width="300" height="400"></li>
+                <li><img src="./액션/9.jpg" onclick="javascript:page_move('드라이브'); alt="드라이브" width="300" height="400"></li>
                 <li><img src="./액션/10.jpg" onclick="javascript:page_move('테넷');" alt="테넷" width="300" height="400"></li>
-                <li><img src="./액션/11.jpg" alt="프로젝트 파워" width="300" height="400"></li>
-                <li><img src="./액션/12.jpg" alt="인셉션" width="300" height="400"></li>
+                <li><img src="./액션/11.jpg" onclick="javascript:page_move('프로젝트 파워');" alt="프로젝트 파워" width="300" height="400"></li>
+                <li><img src="./액션/12.jpg" onclick="javascript:page_move('인셉션');" alt="인셉션" width="300" height="400"></li>
             </ul>
         </div>
         <p class="controls1">
@@ -115,18 +115,18 @@ function template_CINEMATOWN(nick, mov){
                 </div>
                 <div class="slide_wrapper2">
                     <ul class="slides2">
-                        <li><img src="./드라마/1.jpg" alt="잠수종과 나비" width="300" height="400"></li>
-                        <li><img src="./드라마/2.jpg" alt="프랑스여자" width="300" height="400"></li>
-                        <li><img src="./드라마/3.jpg" alt="애비규환" width="300" height="400"></li>
-                        <li><img src="./드라마/4.jpg" alt="내가 죽던 날" width="300" height="400"></li>
-                        <li><img src="./드라마/5.jpg" alt="걸후드" width="300" height="400"></li>
-                        <li><img src="./드라마/6.jpg" alt="찬실이는 복도 많지" width="300" height="400"></li>
-                        <li><img src="./드라마/7.jpg" alt="지옥의 묵시록" width="300" height="400"></li>
-                        <li><img src="./드라마/8.jpg" alt="마틴 에덴" width="300" height="400"></li>
-                        <li><img src="./드라마/9.jpg" alt="불의 전차" width="300" height="400"></li>
-                        <li><img src="./드라마/10.jpg" alt="위플래쉬" width="300" height="400"></li>
-                        <li><img src="./드라마/11.jpg" alt="테슬라" width="300" height="400"></li>
-                        <li><img src="./드라마/12.jpg" alt="레베카" width="300" height="400"></li>
+                        <li><img src="./드라마/1.jpg"  onclick="javascript:page_move('잠수종과 나비');"  alt="잠수종과 나비" width="300" height="400"></li>
+                        <li><img src="./드라마/2.jpg"  onclick="javascript:page_move('프랑스여자');"  alt="프랑스여자" width="300" height="400"></li>
+                        <li><img src="./드라마/3.jpg"  onclick="javascript:page_move('애비규환');"  alt="애비규환" width="300" height="400"></li>
+                        <li><img src="./드라마/4.jpg"  onclick="javascript:page_move('내가 죽던 날');"  alt="내가 죽던 날" width="300" height="400"></li>
+                        <li><img src="./드라마/5.jpg"  onclick="javascript:page_move('걸후드');"  alt="걸후드" width="300" height="400"></li>
+                        <li><img src="./드라마/6.jpg"  onclick="javascript:page_move('찬실이는 복도 많지');"  alt="찬실이는 복도 많지" width="300" height="400"></li>
+                        <li><img src="./드라마/7.jpg"  onclick="javascript:page_move('지옥의 묵시록');"  alt="지옥의 묵시록" width="300" height="400"></li>
+                        <li><img src="./드라마/8.jpg"  onclick="javascript:page_move('마틴 에덴');"  alt="마틴 에덴" width="300" height="400"></li>
+                        <li><img src="./드라마/9.jpg"  onclick="javascript:page_move('불의 전차');"  alt="불의 전차" width="300" height="400"></li>
+                        <li><img src="./드라마/10.jpg" onclick="javascript:page_move('위플래쉬');"  alt="위플래쉬" width="300" height="400"></li>
+                        <li><img src="./드라마/11.jpg" onclick="javascript:page_move('테슬라');"  alt="테슬라" width="300" height="400"></li>
+                        <li><img src="./드라마/12.jpg" onclick="javascript:page_move('레베카');"  alt="레베카" width="300" height="400"></li>
                     </ul>
                 </div>
                 <p class="controls2">
@@ -143,18 +143,18 @@ function template_CINEMATOWN(nick, mov){
                 </div>
                 <div class="slide_wrapper3">
                     <ul class="slides3">
-                        <li><img src="./멜로맨스/1.jpg" alt="노트북" width="300" height="400"></li>
-                        <li><img src="./멜로맨스/2.jpg" alt="나의 이름" width="300" height="400"></li>
-                        <li><img src="./멜로맨스/3.jpg" alt="애프터: 그 후" width="300" height="400"></li>
-                        <li><img src="./멜로맨스/4.jpg" alt="나의 소녀시대" width="300" height="400"></li>
-                        <li><img src="./멜로맨스/5.jpg" alt="소년시절의 너" width="300" height="400"></li>
-                        <li><img src="./멜로맨스/6.jpg" alt="시,나리오" width="300" height="400"></li>
-                        <li><img src="./멜로맨스/7.jpg" alt="너는 달밤에 빛나고" width="300" height="400"></li>
-                        <li><img src="./멜로맨스/8.jpg" alt="비커밍 제인" width="300" height="400"></li>
-                        <li><img src="./멜로맨스/9.jpg" alt="동감" width="300" height="400"></li>
-                        <li><img src="./멜로맨스/10.jpg" alt="레이니 데이 인 뉴욕" width="300" height="400"></li>
-                        <li><img src="./멜로맨스/11.jpg" alt="라스트 크리스마스" width="300" height="400"></li>
-                        <li><img src="./멜로맨스/12.jpg" alt="캔 유 킵 어 시크릿?" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/1.jpg"  onclick="javascript:page_move('노트북');" alt="노트북" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/2.jpg"  onclick="javascript:page_move('나의 이름');" alt="나의 이름" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/3.jpg"  onclick="javascript:page_move('애프터');" alt="애프터: 그 후" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/4.jpg"  onclick="javascript:page_move('나의 소녀시대');" alt="나의 소녀시대" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/5.jpg"  onclick="javascript:page_move('소년시절의 너');" alt="소년시절의 너" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/6.jpg"  onclick="javascript:page_move('시,나리오');" alt="시,나리오" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/7.jpg"  onclick="javascript:page_move('너는 달밤에 빛나고');" alt="너는 달밤에 빛나고" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/8.jpg"  onclick="javascript:page_move('비커밍 제인');" alt="비커밍 제인" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/9.jpg"  onclick="javascript:page_move('동감');" alt="동감" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/10.jpg" onclick="javascript:page_move('레이니 데이 인 뉴욕');" alt="레이니 데이 인 뉴욕" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/11.jpg" onclick="javascript:page_move('라스트 크리스마스');" alt="라스트 크리스마스" width="300" height="400"></li>
+                        <li><img src="./멜로맨스/12.jpg" onclick="javascript:page_move('캔 유 킵 어 시크릿?');" alt="캔 유 킵 어 시크릿?" width="300" height="400"></li>
                     </ul>
                 </div>
                 <p class="controls3">
@@ -171,18 +171,18 @@ function template_CINEMATOWN(nick, mov){
                 </div>
                 <div class="slide_wrapper4">
                     <ul class="slides4">
-                        <li><img src="./코미디/1.jpg" alt="어디갔어, 버나뎃" width="300" height="400"></li>
-                        <li><img src="./코미디/2.jpg" alt="죽지않는 인간들의 밤" width="300" height="400"></li>
-                        <li><img src="./코미디/3.jpg" alt="프란시스 하" width="300" height="400"></li>
-                        <li><img src="./코미디/4.jpg" alt="지니어스 독" width="300" height="400"></li>
-                        <li><img src="./코미디/5.jpg" alt="오! 문희" width="300" height="400"></li>
-                        <li><img src="./코미디/6.jpg" alt="원챈스" width="300" height="400"></li>
-                        <li><img src="./코미디/7.jpg" alt="태백권" width="300" height="400"></li>
-                        <li><img src="./코미디/8.jpg" alt="작은 소망" width="300" height="400"></li>
-                        <li><img src="./코미디/9.jpg" alt="어서오시게스트하우스" width="300" height="400"></li>
-                        <li><img src="./코미디/10.jpg" alt="오케이 마담" width="300" height="400"></li>
-                        <li><img src="./코미디/11.jpg" alt="로마 위드 러브" width="300" height="400"></li>
-                        <li><img src="./코미디/12.jpg" alt="나의 첫 번째 슈퍼스타" width="300" height="400"></li>
+                        <li><img src="./코미디/1.jpg"  onclick="javascript:page_move('어디갔어, 버나뎃');" alt="어디갔어, 버나뎃" width="300" height="400"></li>
+                        <li><img src="./코미디/2.jpg"  onclick="javascript:page_move('죽지않는 인간들의 밤');" alt="죽지않는 인간들의 밤" width="300" height="400"></li>
+                        <li><img src="./코미디/3.jpg"  onclick="javascript:page_move('프란시스 하');" alt="프란시스 하" width="300" height="400"></li>
+                        <li><img src="./코미디/4.jpg"  onclick="javascript:page_move('지니어스 독');" alt="지니어스 독" width="300" height="400"></li>
+                        <li><img src="./코미디/5.jpg"  onclick="javascript:page_move('오! 문희');" alt="오! 문희" width="300" height="400"></li>
+                        <li><img src="./코미디/6.jpg"  onclick="javascript:page_move('원챈스');" alt="원챈스" width="300" height="400"></li>
+                        <li><img src="./코미디/7.jpg"  onclick="javascript:page_move('태백권');" alt="태백권" width="300" height="400"></li>
+                        <li><img src="./코미디/8.jpg"  onclick="javascript:page_move('작은 소망');" alt="작은 소망" width="300" height="400"></li>
+                        <li><img src="./코미디/9.jpg"  onclick="javascript:page_move('어서오시게스트하우스');" alt="어서오시게스트하우스" width="300" height="400"></li>
+                        <li><img src="./코미디/10.jpg" onclick="javascript:page_move('오케이 마담');" alt="오케이 마담" width="300" height="400"></li>
+                        <li><img src="./코미디/11.jpg" onclick="javascript:page_move('로마 위드 러브');" alt="로마 위드 러브" width="300" height="400"></li>
+                        <li><img src="./코미디/12.jpg" onclick="javascript:page_move('나의 첫 번째 슈퍼스타');" alt="나의 첫 번째 슈퍼스타" width="300" height="400"></li>
                     </ul>
                 </div>
                 <p class="controls4">
@@ -199,18 +199,18 @@ function template_CINEMATOWN(nick, mov){
                 </div>
                 <div class="slide_wrapper5">
                     <ul class="slides5">
-                        <li><img src="./가족/1.jpg" alt="담쟁이" width="300" height="400"></li>
-                        <li><img src="./가족/2.jpg" alt="조금씩, 천천히 안녕" width="300" height="400"></li>
-                        <li><img src="./가족/3.jpg" alt="용길이네 곱창집" width="300" height="400"></li>
-                        <li><img src="./가족/4.jpg" alt="아빠는 예쁘다" width="300" height="400"></li>
-                        <li><img src="./가족/5.jpg" alt="안녕 베일리" width="300" height="400"></li>
-                        <li><img src="./가족/6.jpg" alt="나만 없어 고양이" width="300" height="400"></li>
-                        <li><img src="./가족/7.jpg" alt="베카신!" width="300" height="400"></li>
-                        <li><img src="./가족/8.jpg" alt="덤보" width="300" height="400"></li>
-                        <li><img src="./가족/9.jpg" alt="썬키스 패밀리" width="300" height="400"></li>
-                        <li><img src="./가족/10.jpg" alt="히치하이크" width="300" height="400"></li>
-                        <li><img src="./가족/11.jpg" alt="스탠딩 업" width="300" height="400"></li>
-                        <li><img src="./가족/12.jpg" alt="호두까기인형 3D" width="300" height="400"></li>
+                        <li><img src="./가족/1.jpg"  onclick="javascript:page_move('담쟁이');" alt="담쟁이" width="300" height="400"></li>
+                        <li><img src="./가족/2.jpg"  onclick="javascript:page_move('조금씩, 천천히 안녕');" alt="조금씩, 천천히 안녕" width="300" height="400"></li>
+                        <li><img src="./가족/3.jpg"  onclick="javascript:page_move('나용길이네 곱창집');" alt="용길이네 곱창집" width="300" height="400"></li>
+                        <li><img src="./가족/4.jpg"  onclick="javascript:page_move('아빠는 예쁘다');" alt="아빠는 예쁘다" width="300" height="400"></li>
+                        <li><img src="./가족/5.jpg"  onclick="javascript:page_move('안녕 베일리');" alt="안녕 베일리" width="300" height="400"></li>
+                        <li><img src="./가족/6.jpg"  onclick="javascript:page_move('나만 없어 고양이');" alt="나만 없어 고양이" width="300" height="400"></li>
+                        <li><img src="./가족/7.jpg"  onclick="javascript:page_move('베카신!');" alt="베카신!" width="300" height="400"></li>
+                        <li><img src="./가족/8.jpg"  onclick="javascript:page_move('덤보');" alt="덤보" width="300" height="400"></li>
+                        <li><img src="./가족/9.jpg"  onclick="javascript:page_move('썬키스 패밀리');" alt="썬키스 패밀리" width="300" height="400"></li>
+                        <li><img src="./가족/10.jpg" onclick="javascript:page_move('히치하이크');" alt="히치하이크" width="300" height="400"></li>
+                        <li><img src="./가족/11.jpg" onclick="javascript:page_move('스탠딩 업');" alt="스탠딩 업" width="300" height="400"></li>
+                        <li><img src="./가족/12.jpg" onclick="javascript:page_move('호두까기인형 3D');" alt="호두까기인형 3D" width="300" height="400"></li>
                     </ul>
                 </div>
                 <p class="controls5">
@@ -227,18 +227,18 @@ function template_CINEMATOWN(nick, mov){
                 </div>
                 <div class="slide_wrapper6">
                     <ul class="slides6">
-                        <li><img src="./애니/1.jpg" alt="애니멀 크래커" width="300" height="400"></li>
-                        <li><img src="./애니/2.jpg" alt="트롤: 월드 투어" width="300" height="400"></li>
-                        <li><img src="./애니/3.jpg" alt="수퍼 소닉" width="300" height="400"></li>
-                        <li><img src="./애니/4.jpg" alt="스파이 지니어스" width="300" height="400"></li>
-                        <li><img src="./애니/5.jpg" alt="겨울왕국 2" width="300" height="400"></li>
-                        <li><img src="./애니/6.jpg" alt="아담스 패밀리" width="300" height="400"></li>
-                        <li><img src="./애니/7.jpg" alt="빅트립: 아기팬더 배달 대모험" width="300" height="400"></li>
-                        <li><img src="./애니/8.jpg" alt="아이언 자이언트" width="300" height="400"></li>
-                        <li><img src="./애니/9.jpg" alt="플레이모빌: 더 무비" width="300" height="400"></li>
-                        <li><img src="./애니/10.jpg" alt="지구공룡대탐험" width="300" height="400"></li>
-                        <li><img src="./애니/11.jpg" alt="극장판 포켓몬스터 뮤츠의 역습 EVOLUTION" width="300" height="400"></li>
-                        <li><img src="./애니/12.jpg" alt="극장판 짱구는 못말려: 신혼여행 허리케인~ 사라진 아빠!" width="300" height="400"></li>
+                        <li><img src="./애니/1.jpg"  onclick="javascript:page_move('애니멀 크래커');" alt="애니멀 크래커" width="300" height="400"></li>
+                        <li><img src="./애니/2.jpg"  onclick="javascript:page_move('트롤: 월드 투어');" alt="트롤: 월드 투어" width="300" height="400"></li>
+                        <li><img src="./애니/3.jpg"  onclick="javascript:page_move('수퍼 소닉');" alt="수퍼 소닉" width="300" height="400"></li>
+                        <li><img src="./애니/4.jpg"  onclick="javascript:page_move('스파이 지니어스');" alt="스파이 지니어스" width="300" height="400"></li>
+                        <li><img src="./애니/5.jpg"  onclick="javascript:page_move('겨울왕국 2');" alt="겨울왕국 2" width="300" height="400"></li>
+                        <li><img src="./애니/6.jpg"  onclick="javascript:page_move('아담스 패밀리');" alt="아담스 패밀리" width="300" height="400"></li>
+                        <li><img src="./애니/7.jpg"  onclick="javascript:page_move('빅트립: 아기팬더 배달 대모험');" alt="빅트립: 아기팬더 배달 대모험" width="300" height="400"></li>
+                        <li><img src="./애니/8.jpg"  onclick="javascript:page_move('아이언 자이언트');" alt="아이언 자이언트" width="300" height="400"></li>
+                        <li><img src="./애니/9.jpg"  onclick="javascript:page_move('플레이모빌: 더 무비');" alt="플레이모빌: 더 무비" width="300" height="400"></li>
+                        <li><img src="./애니/10.jpg" onclick="javascript:page_move('지구공룡대탐험');" alt="지구공룡대탐험" width="300" height="400"></li>
+                        <li><img src="./애니/11.jpg" onclick="javascript:page_move('극장판 포켓몬스터 뮤츠의 역습 EVOLUTION');" alt="극장판 포켓몬스터 뮤츠의 역습 EVOLUTION" width="300" height="400"></li>
+                        <li><img src="./애니/12.jpg" onclick="javascript:page_move('극장판 짱구는 못말려: 신혼여행 허리케인~ 사라진 아빠!');" alt="극장판 짱구는 못말려: 신혼여행 허리케인~ 사라진 아빠!" width="300" height="400"></li>
                     </ul>
                 </div>
                 <p class="controls6">
@@ -255,18 +255,18 @@ function template_CINEMATOWN(nick, mov){
                 </div>
                 <div class="slide_wrapper7">
                     <ul class="slides7">
-                        <li><img src="./공포/1.jpg" alt="더 렌탈: 소리없는 감시자" width="300" height="400"></li>
-                        <li><img src="./공포/2.jpg" alt="미드소마" width="300" height="400"></li>
-                        <li><img src="./공포/3.jpg" alt="더 터닝" width="300" height="400"></li>
-                        <li><img src="./공포/4.jpg" alt="더 보이" width="300" height="400"></li>
-                        <li><img src="./공포/5.jpg" alt="세인트 아가타" width="300" height="400"></li>
-                        <li><img src="./공포/6.jpg" alt="더 보이 2: 돌아온 브람스" width="300" height="400"></li>
-                        <li><img src="./공포/7.jpg" alt="인비저블맨" width="300" height="400"></li>
-                        <li><img src="./공포/8.jpg" alt="카운트다운" width="300" height="400"></li>
-                        <li><img src="./공포/9.jpg" alt="매리" width="300" height="400"></li>
-                        <li><img src="./공포/10.jpg" alt="47미터 2" width="300" height="400"></li>
-                        <li><img src="./공포/11.jpg" alt="요가학원: 죽음의 쿤달리니" width="300" height="400"></li>
-                        <li><img src="./공포/12.jpg" alt="기기괴괴 성형수" width="300" height="400"></li>
+                        <li><img src="./공포/1.jpg"  onclick="javascript:page_move('더 렌탈: 소리없는 감시자');" alt="더 렌탈: 소리없는 감시자" width="300" height="400"></li>
+                        <li><img src="./공포/2.jpg"  onclick="javascript:page_move('미드소마');" alt="미드소마" width="300" height="400"></li>
+                        <li><img src="./공포/3.jpg"  onclick="javascript:page_move('더 터닝');" alt="더 터닝" width="300" height="400"></li>
+                        <li><img src="./공포/4.jpg"  onclick="javascript:page_move('더 보이');" alt="더 보이" width="300" height="400"></li>
+                        <li><img src="./공포/5.jpg"  onclick="javascript:page_move('세인트 아가타');" alt="세인트 아가타" width="300" height="400"></li>
+                        <li><img src="./공포/6.jpg"  onclick="javascript:page_move('더 보이 2: 돌아온 브람스');" alt="더 보이 2: 돌아온 브람스" width="300" height="400"></li>
+                        <li><img src="./공포/7.jpg"  onclick="javascript:page_move('인비저블맨');" alt="인비저블맨" width="300" height="400"></li>
+                        <li><img src="./공포/8.jpg"  onclick="javascript:page_move('카운트다운');" alt="카운트다운" width="300" height="400"></li>
+                        <li><img src="./공포/9.jpg"  onclick="javascript:page_move('매리');" alt="매리" width="300" height="400"></li>
+                        <li><img src="./공포/10.jpg" onclick="javascript:page_move('47미터 2');" alt="47미터 2" width="300" height="400"></li>
+                        <li><img src="./공포/11.jpg" onclick="javascript:page_move('요가학원: 죽음의 쿤달리니');" alt="요가학원: 죽음의 쿤달리니" width="300" height="400"></li>
+                        <li><img src="./공포/12.jpg" onclick="javascript:page_move('기기괴괴 성형수');" alt="기기괴괴 성형수" width="300" height="400"></li>
                     </ul>
                 </div>
                 <p class="controls7">
@@ -283,18 +283,18 @@ function template_CINEMATOWN(nick, mov){
                 </div>
                 <div class="slide_wrapper8">
                     <ul class="slides8">
-                        <li><img src="./스릴러/1.jpg" alt="팔로우 미" width="300" height="400"></li>
-                        <li><img src="./스릴러/2.jpg" alt="언힌지드" width="300" height="400"></li>
-                        <li><img src="./스릴러/3.jpg" alt="디바" width="300" height="400"></li>
-                        <li><img src="./스릴러/4.jpg" alt="아무도 없다" width="300" height="400"></li>
-                        <li><img src="./스릴러/5.jpg" alt="존 윅" width="300" height="400"></li>
-                        <li><img src="./스릴러/6.jpg" alt="팬데믹" width="300" height="400"></li>
-                        <li><img src="./스릴러/7.jpg" alt="언더워터" width="300" height="400"></li>
-                        <li><img src="./스릴러/8.jpg" alt="사냥의 시간" width="300" height="400"></li>
-                        <li><img src="./스릴러/9.jpg" alt="서치 아웃" width="300" height="400"></li>
-                        <li><img src="./스릴러/10.jpg" alt="아내를 죽였다" width="300" height="400"></li>
-                        <li><img src="./스릴러/11.jpg" alt="굿 라이어" width="300" height="400"></li>
-                        <li><img src="./스릴러/12.jpg" alt="닥터 슬립" width="300" height="400"></li>
+                        <li><img src="./스릴러/1.jpg"  onclick="javascript:page_move('팔로우 미');" alt="팔로우 미" width="300" height="400"></li>
+                        <li><img src="./스릴러/2.jpg"  onclick="javascript:page_move('언힌지드');" alt="언힌지드" width="300" height="400"></li>
+                        <li><img src="./스릴러/3.jpg"  onclick="javascript:page_move('디바');" alt="디바" width="300" height="400"></li>
+                        <li><img src="./스릴러/4.jpg"  onclick="javascript:page_move('아무도 없다');" alt="아무도 없다" width="300" height="400"></li>
+                        <li><img src="./스릴러/5.jpg"  onclick="javascript:page_move('존 윅');" alt="존 윅" width="300" height="400"></li>
+                        <li><img src="./스릴러/6.jpg"  onclick="javascript:page_move('팬데믹');" alt="팬데믹" width="300" height="400"></li>
+                        <li><img src="./스릴러/7.jpg"  onclick="javascript:page_move('언더워터');" alt="언더워터" width="300" height="400"></li>
+                        <li><img src="./스릴러/8.jpg"  onclick="javascript:page_move('사냥의 시간');" alt="사냥의 시간" width="300" height="400"></li>
+                        <li><img src="./스릴러/9.jpg"  onclick="javascript:page_move('서치 아웃');" alt="서치 아웃" width="300" height="400"></li>
+                        <li><img src="./스릴러/10.jpg" onclick="javascript:page_move('아내를 죽였다');" alt="아내를 죽였다" width="300" height="400"></li>
+                        <li><img src="./스릴러/11.jpg" onclick="javascript:page_move('굿 라이어');" alt="굿 라이어" width="300" height="400"></li>
+                        <li><img src="./스릴러/12.jpg" onclick="javascript:page_move('닥터 슬립');" alt="닥터 슬립" width="300" height="400"></li>
                     </ul>
                 </div>
                 <p class="controls8">
@@ -311,18 +311,18 @@ function template_CINEMATOWN(nick, mov){
                 </div>
                 <div class="slide_wrapper9">
                     <ul class="slides9">
-                        <li><img src="./모험/1.jpg" alt="뮬란" width="300" height="400"></li>
-                        <li><img src="./모험/2.jpg" alt="콜 오브 와일드" width="300" height="400"></li>
-                        <li><img src="./모험/3.jpg" alt="프리즌 이스케이프" width="300" height="400"></li>
-                        <li><img src="./모험/4.jpg" alt="라이온 킹" width="300" height="400"></li>
-                        <li><img src="./모험/5.jpg" alt="알라딘" width="300" height="400"></li>
-                        <li><img src="./모험/6.jpg" alt="돈키호테를 죽인 사나이" width="300" height="400"></li>
-                        <li><img src="./모험/7.jpg" alt="왕이 될 아이" width="300" height="400"></li>
-                        <li><img src="./모험/8.jpg" alt="후드" width="300" height="400"></li>
-                        <li><img src="./모험/9.jpg" alt="베일리 어게인" width="300" height="400"></li>
-                        <li><img src="./모험/10.jpg" alt="신비한 동물들과 그린델왈드의 범죄" width="300" height="400"></li>
-                        <li><img src="./모험/11.jpg" alt="곰돌이 푸 다시 만나 행복해" width="300" height="400"></li>
-                        <li><img src="./모험/12.jpg" alt="조선명탐정: 흡혈괴마의 비밀" width="300" height="400"></li>
+                        <li><img src="./모험/1.jpg"  onclick="javascript:page_move('뮬란');" alt="뮬란" width="300" height="400"></li>
+                        <li><img src="./모험/2.jpg"  onclick="javascript:page_move('콜 오브 와일드');" alt="콜 오브 와일드" width="300" height="400"></li>
+                        <li><img src="./모험/3.jpg"  onclick="javascript:page_move('프리즌 이스케이프');" alt="프리즌 이스케이프" width="300" height="400"></li>
+                        <li><img src="./모험/4.jpg"  onclick="javascript:page_move('라이온 킹');" alt="라이온 킹" width="300" height="400"></li>
+                        <li><img src="./모험/5.jpg"  onclick="javascript:page_move('알라딘');" alt="알라딘" width="300" height="400"></li>
+                        <li><img src="./모험/6.jpg"  onclick="javascript:page_move('돈키호테를 죽인 사나이');" alt="돈키호테를 죽인 사나이" width="300" height="400"></li>
+                        <li><img src="./모험/7.jpg"  onclick="javascript:page_move('왕이 될 아이');" alt="왕이 될 아이" width="300" height="400"></li>
+                        <li><img src="./모험/8.jpg"  onclick="javascript:page_move('후드');" alt="후드" width="300" height="400"></li>
+                        <li><img src="./모험/9.jpg"  onclick="javascript:page_move('베일리 어게인');" alt="베일리 어게인" width="300" height="400"></li>
+                        <li><img src="./모험/10.jpg" onclick="javascript:page_move('신비한 동물들과 그린델왈드의 범죄');" alt="신비한 동물들과 그린델왈드의 범죄" width="300" height="400"></li>
+                        <li><img src="./모험/11.jpg" onclick="javascript:page_move('곰돌이 푸 다시 만나 행복해');" alt="곰돌이 푸 다시 만나 행복해" width="300" height="400"></li>
+                        <li><img src="./모험/12.jpg" onclick="javascript:page_move('조선명탐정: 흡혈괴마의 비밀');" alt="조선명탐정: 흡혈괴마의 비밀" width="300" height="400"></li>
                     </ul>
                 </div>
                 <p class="controls9">
