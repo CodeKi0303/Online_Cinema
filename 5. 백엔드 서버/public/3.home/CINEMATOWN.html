@@ -10,9 +10,35 @@
         <link rel="stylesheet" href="./CINEMATOWN.css">
         <!-- CINEMATOWN.css 불러오기-->
         <script type="text/javascript" src="./CINEMATOWN.js" async></script>
+
+            
+        <script>
+            function page_move(some_data) {
+                var form = document.createElement("form");
+                var parm = new Array();
+                var input = new Array();
+            
+                form.action = "/movie/"+some_data;
+                form.method = "get";
+                parm.push( ['name', some_data] );
+            
+                for (var i = 0; i < parm.length; i++) {
+                    input[i] = document.createElement("input");
+                    input[i].setAttribute("type", "hidden");
+                    input[i].setAttribute('name', parm[i][0]);
+                    input[i].setAttribute('id', parm[i][0]);
+                    form.appendChild(input[i]);
+                }
+                document.body.appendChild(form);
+                form.submit();
+            }
+        </script>
+        
     </head>
     
     <body bgcolor="black">
+
+
         <!--백그라운드 컬러-->
         <header>
             <div id="header-title">
@@ -52,7 +78,7 @@
                 <li><img src="./액션/7.jpg" alt="뉴 뮤턴트" width="300" height="400"></li>
                 <li><img src="./액션/8.jpg" alt="에이바" width="300" height="400"></li>
                 <li><img src="./액션/9.jpg" alt="드라이브" width="300" height="400"></li>
-                <li><img src="./액션/10.jpg" alt="테넷" width="300" height="400"></li>
+                <li><img src="./액션/10.jpg" onclick="javascript:page_move('테넷');" alt="테넷" width="300" height="400"></li>
                 <li><img src="./액션/11.jpg" alt="프로젝트 파워" width="300" height="400"></li>
                 <li><img src="./액션/12.jpg" alt="인셉션" width="300" height="400"></li>
             </ul>

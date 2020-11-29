@@ -28,9 +28,35 @@ function template_CINEMATOWN(nick, mov){
         <link rel="stylesheet" href="./CINEMATOWN.css">
         <!-- CINEMATOWN.css 불러오기-->
         <script type="text/javascript" src="./CINEMATOWN.js" async></script>
+
+            
+        <script>
+            function page_move(some_data) {
+                var form = document.createElement("form");
+                var parm = new Array();
+                var input = new Array();
+            
+                form.action = "/movie/"+some_data;
+                form.method = "get";
+                parm.push( ['name', some_data] );
+            
+                for (var i = 0; i < parm.length; i++) {
+                    input[i] = document.createElement("input");
+                    input[i].setAttribute("type", "hidden");
+                    input[i].setAttribute('name', parm[i][0]);
+                    input[i].setAttribute('id', parm[i][0]);
+                    form.appendChild(input[i]);
+                }
+                document.body.appendChild(form);
+                form.submit();
+            }
+        </script>
+        
     </head>
     
     <body bgcolor="black">
+
+
         <!--백그라운드 컬러-->
         <header>
             <div id="header-title">
@@ -70,7 +96,7 @@ function template_CINEMATOWN(nick, mov){
                 <li><img src="./액션/7.jpg" alt="뉴 뮤턴트" width="300" height="400"></li>
                 <li><img src="./액션/8.jpg" alt="에이바" width="300" height="400"></li>
                 <li><img src="./액션/9.jpg" alt="드라이브" width="300" height="400"></li>
-                <li><img src="./액션/10.jpg" alt="테넷" width="300" height="400"></li>
+                <li><img src="./액션/10.jpg" onclick="javascript:page_move('테넷');" alt="테넷" width="300" height="400"></li>
                 <li><img src="./액션/11.jpg" alt="프로젝트 파워" width="300" height="400"></li>
                 <li><img src="./액션/12.jpg" alt="인셉션" width="300" height="400"></li>
             </ul>
@@ -317,6 +343,207 @@ function template_CINEMATOWN(nick, mov){
     
 }
 
+function return_star_img(star, num){
+    if(star >= num){
+        return '별2'
+    }else{
+        return '별'
+    }
+}
+
+function template_movie(name){
+    const jsonfile = fs.readFileSync('movie_data.json', 'utf-8');
+    const movie_data = JSON.parse(jsonfile);
+    var n = 0;
+    while(movie_data[n]){
+        if(movie_data[n].name == name){
+            break;
+        }else{
+            n = n + 1
+        }
+    }
+    console.log(name);
+    console.log(movie_data);
+    var path = movie_data[n].path;
+    var star = movie_data[n].star;
+    var content = movie_data[n].content;
+    var comment0 =  movie_data[n].comment0;
+    var comment1 =  movie_data[n].comment1;
+    var comment2 =  movie_data[n].comment2;
+    
+    var star1 = return_star_img(star, 1);
+    var star2 = return_star_img(star, 2);
+    var star3 = return_star_img(star, 3);
+    var star4 = return_star_img(star, 4);
+    var star5 = return_star_img(star, 5);
+
+    return `<!DOCTYPE html>
+    <html lang="ko"></html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+    
+    html {
+      font-family: "Lucida Sans", sans-serif;
+    }
+    
+    .header {
+      background-color: #9933cc;
+      color: #ffffff;
+      padding: 10px;
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #33b5e5;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    .menu li:hover {
+      background-color: #0099cc;
+    }
+    
+    .aside {
+      background-color: #33b5e5;
+      padding: 15px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    
+    .footer {
+      background-color: #0099cc;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+    }
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: auto;
+      height: auto;
+    }
+    
+    .comment{
+      padding: 8px;
+      margin-bottom: 7px;
+      background-color: #009900;
+      color: #ffffff;
+      text-align: center;
+    }
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    
+    @media only screen and (min-width: 600px) {
+      /* For tablets: */
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
+    }
+    @media only screen and (min-width: 768px) {
+      /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="header">
+      <h1>테넷</h1>
+    </div>
+    
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <div class="responsive">
+          <img src="${path}" alt="Movie Poster" width=100% height=auto>
+        </div>
+      </div>
+    
+      <div class="col-6 col-s-9">
+        <h1>별점</h1>
+        <img src="${star1}.png" alt="평점" width="30" height="30">
+        <img src="${star2}.png" alt="평점" width="30" height="30">
+        <img src="${star3}.png" alt="평점" width="30" height="30">
+        <img src="${star4}.png" alt="평점" width="30" height="30">
+        <img src="${star5}.png" alt="평점" width="30" height="30">
+
+     
+        <h1>줄거리</h1>
+        <p>${content}</content></p>
+        
+        <p> </p>
+      
+      </div>
+    
+      <div class="col-3 col-s-12">
+        <div class="aside">
+          <div class = "comment">
+            <p>${comment0}</comment0></p>
+          </div>
+          <div class = "comment">
+            <p>${comment1}</comment2></p>
+          </div>
+          <div class = "comment">
+            <p>${comment2}</comment2></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+    
+    </body>
+    </html>
+    `
+}
+
 //로그인
 app.post('/login', function (request, response) {
     
@@ -514,7 +741,12 @@ app.post('/survey', function (request, response) {
     response.redirect('/1.mypage/mypage_new.html')
 });
 
-
+app.get('/movie/:name', function (request, response) {
+    console.log(request);
+    var template = template_movie(request.params.name);
+    fs.writeFileSync('./public/3.home/movie.html', template);
+    response.redirect('/3.home/movie.html');
+});
 
 // 웹 서버를 실행합니다.
 app.listen(52273, function () {
