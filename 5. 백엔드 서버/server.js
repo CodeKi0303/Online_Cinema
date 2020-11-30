@@ -708,9 +708,9 @@ app.post('/edit_info', function (request, response) {
     var id_n = id_n_temp;
 
     var pw = request.body.pw;
-    var email = request.body.pw;
-    var nickname = request.body.pw;
- 
+    var email = request.body.email;
+    var nickname = request.body.nickname;
+    
     login_data[id_n].pw = pw;
     login_data[id_n].email = email;
     login_data[id_n].nickname = nickname;
