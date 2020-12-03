@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#header-title {
+    text-align: center;
+}
+
+#header-yourgenre {
+    font-style: italic;
+    color: white;
+}
+
+#header-menu{
+    float: right;
+    margin-right: 20px;
+}
+
+.slide_wrapper1 {
+    position: relative;
+    width: 1900px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 1.0s ease-out;
+}
+
+.slides1 li:not(:last-child) {
+    float: left;
+    margin-right: 20px;
+}
+
+.controls1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls1 span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls1 span.prev1 {
+    cursor: pointer;
+    right: calc(100% + 50px);
+}
+
+.controls1 span.next1 {
+    cursor: pointer;
+    left: calc(100% + 50px);
+}
+
+.slide_wrapper2 {
+    position: relative;
+    width: 1900px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 1.0s ease-out;
+}
+
+.slides2 li:not(:last-child) {
+    float: left;
+    margin-right: 20px;
+}
+
+.controls2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls2 span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls2 span.prev2 {
+    cursor: pointer;
+    right: calc(100% + 50px);
+}
+
+.controls2 span.next2 {
+    cursor: pointer;
+    left: calc(100% + 50px);
+}
+
+.slide_wrapper3 {
+    position: relative;
+    width: 1900px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 1.0s ease-out;
+}
+
+.slides3 li:not(:last-child) {
+    float: left;
+    margin-right: 20px;
+}
+
+.controls3 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls3 span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls3 span.prev3 {
+    cursor: pointer;
+    right: calc(100% + 50px);
+}
+
+.controls3 span.next3 {
+    cursor: pointer;
+    left: calc(100% + 50px);
+}
+
+.slide_wrapper4 {
+    position: relative;
+    width: 1900px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides4 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 1.0s ease-out;
+}
+
+.slides4 li:not(:last-child) {
+    float: left;
+    margin-right: 20px;
+}
+
+.controls4 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls4 span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls4 span.prev4 {
+    cursor: pointer;
+    right: calc(100% + 50px);
+}
+
+.controls4 span.next4 {
+    cursor: pointer;
+    left: calc(100% + 50px);
+}
+
+.slide_wrapper5 {
+    position: relative;
+    width: 1900px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides5 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 1.0s ease-out;
+}
+
+.slides5 li:not(:last-child) {
+    float: left;
+    margin-right: 20px;
+}
+
+.controls5 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls5 span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls5 span.prev5 {
+    cursor: pointer;
+    right: calc(100% + 50px);
+}
+
+.controls5 span.next5 {
+    cursor: pointer;
+    left: calc(100% + 50px);
+}
+
+.slide_wrapper6 {
+    position: relative;
+    width: 1900px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides6 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 1.0s ease-out;
+}
+
+.slides6 li:not(:last-child) {
+    float: left;
+    margin-right: 20px;
+}
+
+.controls6 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls6 span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls6 span.prev6 {
+    cursor: pointer;
+    right: calc(100% + 50px);
+}
+
+.controls6 span.next6 {
+    cursor: pointer;
+    left: calc(100% + 50px);
+}
+
+.slide_wrapper7 {
+    position: relative;
+    width: 1900px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides7 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 1.0s ease-out;
+}
+
+.slides7 li:not(:last-child) {
+    float: left;
+    margin-right: 20px;
+}
+
+.controls7 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls7 span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls7 span.prev7 {
+    cursor: pointer;
+    right: calc(100% + 50px);
+}
+
+.controls7 span.next7 {
+    cursor: pointer;
+    left: calc(100% + 50px);
+}
+
+.slide_wrapper8 {
+    position: relative;
+    width: 1900px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides8 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 1.0s ease-out;
+}
+
+.slides8 li:not(:last-child) {
+    float: left;
+    margin-right: 20px;
+}
+
+.controls8 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls8 span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls8 span.prev8 {
+    cursor: pointer;
+    right: calc(100% + 50px);
+}
+
+.controls8 span.next8 {
+    cursor: pointer;
+    left: calc(100% + 50px);
+}
+
+.slide_wrapper9 {
+    position: relative;
+    width: 1900px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides9 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: left 1.0s ease-out;
+}
+
+.slides9 li:not(:last-child) {
+    float: left;
+    margin-right: 20px;
+}
+
+.controls9 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.controls9 span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+.controls9 span.prev9 {
+    cursor: pointer;
+    right: calc(100% + 50px);
+}
+
+.controls9 span.next9 {
+    cursor: pointer;
+    left: calc(100% + 50px);
+}

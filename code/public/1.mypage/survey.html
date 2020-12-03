@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문지</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        b{
+            font-size: 23px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>기본 정보 조사</h1>
+    <h2>마이페이지에서 재설정 가능합니다!</h2>
+    <form action="#" method="POST">
+        <div id="yearp">
+            <b>연령:</b>  <br>
+            <input type="radio" name="year" value="10">10대<br>
+            <input type="radio" name="year" value="20">20대 <br>
+            <input type="radio" name="year" value="30">30대 <br>
+            <input type="radio" name="year" value="40">40대 <br>
+            <input type="radio" name="year" value="50">50대 <br>
+            <input type="radio" name="year" value="60">50대 이후 <br>
+        </div>
+        <br>
+        <div id="genp">
+            <b>성별:</b> 
+            <input type="radio" name="gen" value="male"> 남자 
+            <input type="radio" name="gen" value="female"> 여자
+        </div>
+        <br>
+
+        <div id="movp">
+            <b>장르:</b> <br>
+            <input type="checkbox" name="mov" value="rom"> 로멘스 <br>
+            <input type="checkbox" name="mov" value="fam"> 가족 <br>
+            <input type="checkbox" name="mov" value="com"> 코메디 <br>
+            <input type="checkbox" name="mov" value="sport"> 스포츠 <br>
+            <input type="checkbox" name="mov" value="hor"> 호러 <br>
+            <input type="checkbox" name="mov" value="west"> 서부 <br>
+        </div>
+        <br>
+        <input type="submit" name="제출">
+        <input type="reset" name="초기화">
+
+
+    </form>
+</body>
+</html>
